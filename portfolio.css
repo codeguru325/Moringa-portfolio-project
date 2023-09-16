@@ -1,0 +1,465 @@
+
+*{
+  padding:none;
+  margin:none;
+}
+
+html{
+    height:100vw;
+    width:100vw;
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+   
+   }
+  
+  
+  body{
+   height:100vh;
+   width:100vw;
+   color:black;
+   font-size:inherit;
+   margin:0px;
+   border-radius:5px;
+   padding:0px;
+    }
+  
+  
+  #header{
+    width:100vw;
+  background-image: linear-gradient(
+    45deg,
+    hsl(120deg 82% 26%) 0%,
+    hsl(74deg 100% 24%) 9%,
+    hsl(42deg 100% 30%) 18%,
+    hsl(21deg 100% 43%) 27%,
+    hsl(14deg 100% 46%) 36%,
+    hsl(34deg 100% 35%) 45%,
+    hsl(62deg 100% 23%) 55%,
+    hsl(96deg 100% 24%) 64%,
+    hsl(84deg 100% 24%) 73%,
+    hsl(51deg 100% 26%) 82%,
+    hsl(28deg 100% 39%) 91%,
+    hsl(0deg 100% 50%) 100%
+  );
+    height:65px;
+    display:flex;
+    float:right;
+    align-items:center;
+    position:fixed;
+    top:0px;
+  }
+
+
+  i{
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
+
+    #welcome-logo {
+       display: flex; /* Make the div a flex container */
+      align-items: center; /* Center child elements vertically */
+    height:65px;
+    width:200px;
+    color:white;
+      
+  }
+  #welcome-logo-img{
+    height:65px;
+    width:200px;
+    object-fit:cover;
+  }
+  
+  
+  #navbar{
+    margin-left:700px;
+    width:400px;
+    height:65px;
+    display:flex;      justify-content:center;
+    align-items:center;
+   background-image: linear-gradient(
+    45deg,
+    hsl(120deg 82% 26%) 0%,
+    hsl(74deg 100% 24%) 9%,
+    hsl(42deg 100% 30%) 18%,
+    hsl(21deg 100% 43%) 27%,
+    hsl(14deg 100% 46%) 36%,
+    hsl(34deg 100% 35%) 45%,
+    hsl(62deg 100% 23%) 55%,
+    hsl(96deg 100% 24%) 64%,
+    hsl(84deg 100% 24%) 73%,
+    hsl(51deg 100% 26%) 82%,
+    hsl(28deg 100% 39%) 91%,
+    hsl(0deg 100% 50%) 100%
+  );
+    color:black;
+     }
+  
+   
+   .navbar-link{
+     margin:30px;
+     text-decoration:none;
+     color:white;
+     font-size:23px;
+     font-weight:950;
+   }
+  
+
+   #nav-link:hover{
+    background-color:red;
+   }
+   
+  #welcome-section{
+  margin-top:-6px;
+  height:1000px;
+  background: linear-gradient(90deg, 
+          rgba(255,0,0,1) 0%, /* Start with red */
+          /* White at the same point as red */
+          rgba(0,0,0,1) 55%, /* Continue with black */
+          rgba(255,0,0,1) 100% /* End with red */
+      );
+      width:100vw;
+     margin-left:auto;
+     margin-right: auto;
+  
+  }
+
+
+
+   #welcome-text{
+      width:600px;  
+       margin:0 auto;  
+     font-weight:bold;
+     font-size:34px;
+      color:white;
+      padding-top:200px;
+   }
+  
+  
+   #welcome-text-red {
+     color:red;
+    width:300px;
+   font-size:23px;
+   margin:0 auto;
+   font-weight:bold;
+   }
+  
+   #my-img{
+    background-color:red;
+     margin:40px auto;
+     height:250px;
+     width:400px;
+      
+   }
+  
+  #my-photo{
+  height:350px;
+  width:400px;
+  object-fit:cover;
+  }
+  
+   #about-me{
+  width:600px;
+  height:300px;
+  margin:0 auto;
+  padding-top:70px;
+   }
+  
+   #about-me-text{
+  color:white;
+  padding:30px;
+  width:600px;
+  font-size:23px; }
+    
+  
+    #projects{
+       
+      width:100vw;
+      height:1000px;
+      margin:0 auto;
+   background-image: linear-gradient(
+    45deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(23deg 100% 40%) 10%,
+    hsl(40deg 100% 30%) 20%,
+    hsl(62deg 100% 21%) 30%,
+    hsl(86deg 100% 21%) 40%,
+    hsl(136deg 82% 22%) 50%,
+    hsl(86deg 100% 21%) 60%,
+    hsl(62deg 100% 21%) 70%,
+    hsl(40deg 100% 30%) 80%,
+    hsl(23deg 100% 40%) 90%,
+    hsl(0deg 100% 50%) 100%
+  );
+    margin-top:-26px;
+    
+    
+    }
+  
+    #projets-text{
+  text-decoration:underline;
+   text-align:center;
+   padding-top:55px;
+  font-size:29px;
+  color:white;
+  left:-25px;
+    }
+  
+  
+    
+    #grid-container{
+      
+      display:grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding:10px;
+    padding-right:0;
+    padding-left:15px;
+  
+     grid-gap:10px;
+      padding-bottom: 20px;
+     
+  }
+  
+      
+    .project-tile {
+    aspect-ratio: 1/1;
+    background-color: red;
+    width:350px;
+    height:350px;
+     
+    
+   
+  } 
+  
+   #grid-img{
+     width:100%;
+     height:85%;
+     object-fit:cover;
+     display:block;
+    
+   }
+  
+   #grid-text{
+    display: block;
+   
+   width:350px;
+   font-weight:bold;
+   }
+   
+
+   .project-tile:hover{
+    background-color:green;
+   }
+   
+   p{
+      text-align:center;
+   }
+    
+
+    
+      
+  
+  #show-all{
+    display:block;
+    margin:0 auto;
+    width:30px;
+  padding-top:50px;}
+  
+  
+  
+  #submit{
+  background-color:white;
+  font-size:23px;
+  margin-left:-100px;
+  font-weight: bold;
+  padding:5px;
+  border-radius: 5px;
+  
+  }
+  
+  #show-all:hover #submit{
+  
+  background-color:red;
+    }
+    
+  
+    #pre-footer-container{
+     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(255,0,0,1) 100%);
+     padding-bottom:30px;
+     width:100vw;
+    
+  }
+  
+  #pre-footer-text-container{
+  
+  padding-top:150px;
+   
+  margin:0 auto;
+  width:450px;
+  
+  }
+  
+  #pre-footer-bold{
+  font-size:45px;
+  font-weight:bold;
+  text-align:center;
+  margin:0 auto;
+  color:white;
+  }
+  
+  #pre-footer-not-bold
+  {
+    margin:0 auto;
+    font-weight:normal;
+    font-size:20px;
+    text-align:center;
+    width:250px;
+    color:white;
+     }
+  
+     #social-media-handles{
+  padding-top:40px;
+  color:white;
+  display:flex;
+  width:100vw;
+  align-items:center;
+  padding-bottom:150px;
+   gap:20px;
+  justify-content:center;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(255,0,0,1) 100%);
+   
+  
+  }
+  
+  
+  .social-container{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:5px;
+  width:auto;
+  height:55px;
+  padding-left:5px;
+  padding-right:5px;
+  
+  
+    
+  
+  }
+  .social-img{
+  height:40px;
+  width:auto;
+  }
+  
+  #line{
+    width:100vw;
+      
+    height:3px;
+    background-color:green;
+   
+    
+  }
+  
+  #bottom-text{
+  width:100vw;
+    height:70px;
+    flex-direction:row;
+    display:flex;
+    align-items:center;
+    background-image: linear-gradient(
+    45deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(23deg 100% 40%) 10%,
+    hsl(40deg 100% 30%) 20%,
+    hsl(62deg 100% 21%) 30%,
+    hsl(86deg 100% 21%) 40%,
+    hsl(136deg 82% 22%) 50%,
+    hsl(86deg 100% 21%) 60%,
+    hsl(62deg 100% 21%) 70%,
+    hsl(40deg 100% 30%) 80%,
+    hsl(23deg 100% 40%) 90%,
+    hsl(0deg 100% 50%) 100%
+  );
+    justify-content:center;
+    gap:50px;
+    overflow:hidden;
+    color:white;
+    
+  }
+  
+  
+  #txt1:before{
+  Content:"**";
+  }
+  
+  
+  #txt2:before{
+  content:"© ";
+  }
+  
+  #txt:after{
+  content:"";
+  }
+
+  #txt2{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+  }
+  
+  a{
+   text-decoration:none;
+   color:inherit;
+  
+  }
+  
+  .social-container:hover{
+  animation:social-container-animation 0.3s  ease-in-out forwards;
+    transition: transform  ease-in-out0.3s;
+  }
+  
+  #moringa-logo{
+    height:22px;
+    width:22px;
+    padding-left:5px;
+  
+  }
+  
+  @keyframes social-container-animation{
+  0%{
+   transform: translateY(0);
+  }
+   
+  100%{
+    transform: translateY(10px);
+  }
+  
+   
+  }
+  
+  @media (max-width: 480px) {
+    /* CSS rules for mobile devices */
+    #header {
+      /* Adjust the styles for the header on mobile devices */
+      width:100%;
+    }
+  
+     
+  
+    #welcome-text {
+   width:100%;
+    }
+  
+    /* Add more CSS rules as needed for mobile devices */
+  }
+   
+  
+   
+  
+  

@@ -106,6 +106,7 @@ html{
      color:white;
      font-size:23px;
      font-weight:950;
+     text-decoration: underline;
    }
   
 
@@ -115,7 +116,7 @@ html{
    
   #welcome-section{
   margin-top:-6px;
-  height:1000px;
+  height:1100px;
   background: linear-gradient(90deg, 
           rgba(255,0,0,1) 0%, /* Start with red */
           /* White at the same point as red */
@@ -127,6 +128,8 @@ html{
      margin-right: auto;
   
   }
+
+
 
 
 
@@ -174,7 +177,95 @@ html{
   padding:30px;
   width:600px;
   font-size:23px; }
+
+  
+
+
+  #skills-text{
+    color:white;
+    margin:0 auto;
+    padding-top:25px;
+    padding-bottom:30px;
+    font-size:27px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:underline;
+  }
+  
+
+
+  
+  #skills{
+  height:500px;
+   width:100%;
+   margin:0 auto;
+    background: linear-gradient(90deg, 
+          rgba(255,0,0,1) 0%, /* Start with red */
+          /* White at the same point as red */
+          rgba(0,0,0,1) 55%, /* Continue with black */
+          rgba(255,0,0,1) 100% /* End with red */
+      );
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding-bottom:50px;
+   }
     
+    .skills-sq-1{
+      display:flex;
+      flex-direction:column;
+      height:390px;
+      width:300px;
+      background-color:white;
+      margin:20px;
+      border:0.1px solid black;
+      border-radius:10px;
+    }
+    
+  li{
+    padding:3px;
+  }
+  
+    .sq-rect{ 
+  padding:4px;
+    height:150px;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  
+  #html-rect1{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+  }
+  
+  
+  #js-rect2{
+    width:150px;
+     height:150px;
+    object-fit:cover;
+  }
+  
+  
+  #css-rect3{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+  }
+  
+  .ul{
+    color:black;
+    white-space:wrap;
+    overflow:hidden;
+     
+  }
+  
+
   
     #projects{
        
